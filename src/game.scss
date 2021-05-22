@@ -1,0 +1,50 @@
+.game{ // for the game component
+    margin: 10px;
+    padding: 20px;
+    display: flex; // css flexbox
+    flex-direction: column; // column arrangement
+    align-items: center;
+}
+
+.board{ // for the board component
+    background-color: skyblue;
+    margin: 10px;
+    padding: 20px;
+
+    .board_row{
+        display: flex; // css flexbox
+        flex-flow: row nowrap; // non wrapping rows
+    }
+}
+
+.tile{ // for the tile component
+    background-color: #444;
+    color: white;
+    border: 2px solid;
+    padding: 0px;
+    text-align: center;
+    font-size: 90px;
+    width: 100px; // 100x100 px tiles
+    height: 100px;
+}
+
+//when button is clicked, change the color
+.tile:focus{
+    outline: none;
+    background-color: #222;
+}
+
+body{ // for the whole body
+    background-color: #444;
+    color: white;
+    margin: 20px;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.status{
+    margin: 20px;
+    font-size: 24px;
+}
+
+
